@@ -6,7 +6,7 @@
 /*   By: nsalle <nsalle@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/09/17 20:41:39 by faneyer      #+#   ##    ##    #+#       */
-/*   Updated: 2019/12/12 18:33:07 by nsalle      ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/12/12 19:00:08 by nsalle      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -22,7 +22,7 @@
 typedef struct			s_list_answ
 {
 	char				*line;
-	struct t_list_answ	*next;
+	struct s_list_answ	*next;
 }						t_list_answ;
 
 typedef struct			s_list_path
