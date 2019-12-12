@@ -6,7 +6,7 @@
 /*   By: nsalle <nsalle@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/12/11 13:34:12 by nsalle       #+#   ##    ##    #+#       */
-/*   Updated: 2019/12/12 15:58:39 by nsalle      ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/12/12 18:21:26 by nsalle      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -102,6 +102,7 @@ void	store_all_paths(t_lem *lem)
 	}
 	try_to_find(lem->room_matrix[0], lem, path);
 	ft_printf("J'ai trouve %d paths\n\n", lem->nb_path);
-	print_all_paths(lem);
+	//print_all_paths(lem);
 	get_shortest_path(lem);
+	print_path(lem->shortest_path, lem);
 }

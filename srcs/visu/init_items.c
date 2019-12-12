@@ -6,7 +6,7 @@
 /*   By: nsalle <nsalle@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/11/14 16:41:46 by nsalle       #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/24 19:55:24 by nsalle      ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/12/12 18:31:43 by nsalle      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -125,7 +125,7 @@ void     init_items(t_lem *lem, t_visulem *vs)
 		error_init(lem, vs, ret);
     if ((ret = init_startend(lem, vs)) != 0)
 		error_init(lem, vs, ret);
-    if ((ret = DrawAllLines(lem, vs, vs->rooms)) != 0)
+    if ((ret = drawalllines(lem, vs, vs->rooms)) != 0)
 		error_init(lem, vs, ret);
 	if ((ret = init_ants(lem, vs)) != 0)
 		error_init(lem, vs, ret);

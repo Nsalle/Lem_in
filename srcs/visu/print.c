@@ -6,7 +6,7 @@
 /*   By: nsalle <nsalle@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/10/29 05:45:09 by nsalle       #+#   ##    ##    #+#       */
-/*   Updated: 2019/11/25 21:03:39 by nsalle      ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/12/12 18:31:11 by nsalle      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -56,7 +56,7 @@ int		print_all(t_visulem *vs, t_lem *lem)
         i ++;
 		nbroom--;
     }
-	if ((DrawAllLines(lem, vs, vs->rooms)) != 0)
+	if ((drawalllines(lem, vs, vs->rooms)) != 0)
 		ret_msg(2, "print_all error while drawing links");
 	if ((SDL_SetRenderDrawColor(vs->renderer, 45, 45, 45, 255)) != 0)
 		ret_msg(2, "print_all error on RenderDrawColor (For endroom)");
@@ -108,7 +108,7 @@ int		Draw_BigFatline(SDL_Renderer *renderer, int x1, int y1, int x2, int y2)
 	return(0);
 }
 
-int		DrawAllLines(t_lem *lem, t_visulem *vs, t_room *room)
+int		drawalllines(t_lem *lem, t_visulem *vs, t_room *room)
 {
 	int matrixi = 0;
 	int matrixj;

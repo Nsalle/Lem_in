@@ -6,7 +6,7 @@
 /*   By: nsalle <nsalle@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/12/12 14:24:28 by nsalle       #+#   ##    ##    #+#       */
-/*   Updated: 2019/12/12 14:56:38 by nsalle      ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/12/12 18:24:57 by nsalle      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -18,7 +18,7 @@ size_t	get_tab_size(int *tab)
 	size_t	size;
 
 	size = 0;
-	while(tab[size])
+	while (tab[size])
 		size++;
 	return (size);
 }
@@ -28,22 +28,22 @@ void	add_to_path(int *path, int c)
 	int		i;
 
 	i = 0;
-	while(path[i])
+	while (path[i])
 		i++;
 	path[i] = c;
 }
 
-int	    *tabdup(int	*tab)
+int		*tabdup(int *tab)
 {
 	int		*rep;
 	int		i;
 
 	i = 0;
-	while(tab[i])
+	while (tab[i])
 		i++;
 	rep = (int*)malloc(sizeof(int) * (i + 1));
 	i = 0;
-	while(tab[i])
+	while (tab[i])
 	{
 		rep[i] = tab[i];
 		i++;

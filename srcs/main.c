@@ -6,7 +6,7 @@
 /*   By: nsalle <nsalle@student.le-101.fr>          +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2019/07/27 19:02:01 by nsalle       #+#   ##    ##    #+#       */
-/*   Updated: 2019/12/12 14:24:33 by nsalle      ###    #+. /#+    ###.fr     */
+/*   Updated: 2019/12/12 18:15:09 by nsalle      ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -40,7 +40,7 @@ int		main(int argc, char **argv)
 		bool_visu = 1;
 	lem_parsing(&lemin);
 	remove_paths(&lemin);
-	test(&lemin);
+	//test(&lemin);
 	if (!bool_visu)
 		free_tabfile(&lemin);
 	// if (find_end(&lemin))
